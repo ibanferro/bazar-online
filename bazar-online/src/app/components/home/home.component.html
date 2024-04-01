@@ -1,0 +1,21 @@
+<app-search-box (filterTextEE)="newSearchText($event)" />
+
+<div class="flex-wrapper">
+  <div class="flex-container">
+    <router-outlet/>
+<!--     <ng-container *ngIf="selectedProduct === null && searchText.length > 0" >
+      <ng-container *ngIf="filteredProducts.length > 0; else noProducts">
+        <p>Products for search: {{searchText}}</p>
+        <app-product-card-list [productList]="filteredProducts" (selectProductIdEE)="selectProduct($event)" />
+      </ng-container>
+
+      <ng-template #noProducts>
+        <p>No products for search: {{searchText}}</p>
+      </ng-template>
+    </ng-container>
+
+    <ng-container *ngIf="selectedProduct !== null" >
+      <app-product-details [product]="selectedProduct"/>
+    </ng-container> -->
+  </div>
+</div>

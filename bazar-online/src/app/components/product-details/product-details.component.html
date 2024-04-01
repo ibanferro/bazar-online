@@ -1,0 +1,33 @@
+<ng-container *ngIf="!!product">
+  <section id="images">
+    <img src="https://picsum.photos/id/237/200/300" alt="Main Image">
+    <div class="thumbnails">
+      <img src="https://picsum.photos/id/237/200/300" alt="Thumbnail Image">
+      <img src="https://picsum.photos/id/238/200/300" alt="Thumbnail Image">
+      <img src="https://picsum.photos/id/239/200/300" alt="Thumbnail Image">
+      <img src="https://picsum.photos/id/240/200/300" alt="Thumbnail Image">
+    </div>
+  </section>
+
+  <section id="product-info">
+    <b class="product-title">
+      {{ product.title }} - {{product.brand}}
+    </b>
+    <b class="product-price">
+      {{ product.price | currency }}
+    </b>
+    <b class="product-stock">
+      {{ product.stock }} available
+    </b>
+    <div class="product-rating">
+      Rating: {{ product.rating}}
+    </div>
+    <div class="product-description">
+      {{ product.description }}
+    </div>
+  </section>
+
+  <button class="buy">
+    Comprar
+  </button>
+</ng-container>
